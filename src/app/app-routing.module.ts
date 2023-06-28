@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'listapet',
+    loadChildren: () => import('./listapet/listapet.module').then( m => m.ListapetPageModule)
+  },
 ];
 
 @NgModule({

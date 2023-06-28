@@ -24,3 +24,25 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+
+
+input{
+    --border-radius: 10px;
+     border-radius: 10px;
+     background-color:rgb(241, 241, 241);
+    --webkit-box-shadow: 4px 4px 20px 5px rgba(248, 243, 243, 0.5);
+     box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+ion-content{
+    
+    --background: url('../src/assets/dog.jpg.png');
+    
+}
+
+
