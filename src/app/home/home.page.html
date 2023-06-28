@@ -1,4 +1,12 @@
+
+  
+
 <ion-content class="fundo" [fullscreen]="true">
+<ion-toolbar color="secondary">
+    <ion-title >PetBolt</ion-title >
+  </ion-toolbar>
+
+
   <div class="espaco">
     <ion-row style="margin-top: 30px">
       <ion-col>
@@ -11,7 +19,7 @@
             expand="block"
             style="color: #222"
             placeholder="*****"
-            maxlength="8"
+            maxlength="10"
             [(ngModel)]="Pet.nome"
           ></ion-input>
         </ion-item>

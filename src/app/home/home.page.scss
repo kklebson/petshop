@@ -1,6 +1,26 @@
 
 .espaco{
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 40px
+
+
  }
  
+ .roudedInput{
+   --border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgb(241, 241, 22);
+ }
+
+ ion-header {
+  --background: #ff0000;
+    background-color: red;
+    background-size: auto;
+}
+
+.topo{
+  margin-top: center;
+  --background-color: rgb(214, 142, 18);
+
+  background-color: rgb(214, 142, 18);
+}
