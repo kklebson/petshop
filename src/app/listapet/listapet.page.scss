@@ -1,0 +1,32 @@
+.back{
+    display:  flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:  auto;
+    height: 2rem;
+    
+   
+   p{
+       font-size: 8px;
+       font-weight: bold;
+   }
+   
+   .espaco{
+      margin-left: 40px;
+      margin-right: 40px;
+     
+      
+   }
+   .dog{
+        border-radius: 15px;
+       
+   }
+
+   .cachorro{
+    border-radius: 15px;
+    background-color: chocolate;
+
+   }
+
+   }

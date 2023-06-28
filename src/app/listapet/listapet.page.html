@@ -1,0 +1,56 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar class="topo" color="secondary" >
+    <ion-title >Lista pets</ion-title >
+  </ion-toolbar>
+  <div class="espaco">
+    <div *ngFor="let end of Pets">
+      <ion-card class="dog" color="primary">
+        <img alt="PET" src="{{end.imagem}}" />
+        <ion-card-header>
+          <ion-card-title
+            >Nome:
+            <span style="color: rgb(255, 255, 255)"
+              >{{end.nome}}</span
+            ></ion-card-title
+          >
+          <ion-card-title>
+            Idade:
+            <span style="color: rgb(255, 255, 255)"
+              >{{end.idade}}</span
+            ></ion-card-title
+          >
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="8"></ion-col>
+
+            <ion-col size="4">
+              <ion-button
+                size="small"
+                color="danger"
+                (click)="deletar(end.nome)"
+              >
+                <ion-icon name="trash-outline"></ion-icon>
+                <ion-label style="margin-top: 0; margin-left: 6px"
+                  >Excluir</ion-label
+                >
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <ion-fab
+      slot="fixed"
+      vertical="bottom"
+      horizontal="end"
+      style="margin: 2rem"
+    >
+      <ion-fab-button (click)="novo()" color="dark">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>
